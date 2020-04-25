@@ -102,6 +102,9 @@ persist.vendor.imx376_ofilm.low.lux=290
 persist.vendor.imx376_sunny.light.lux=275
 persist.vendor.imx376_sunny.low.lux=290
 
+# Dalvik dex2oat
+dalvik.vm.dex2oat64.enabled=true
+
 # Display
 debug.sf.early_app_phase_offset_ns=1500000
 debug.sf.early_gl_app_phase_offset_ns=15000000
