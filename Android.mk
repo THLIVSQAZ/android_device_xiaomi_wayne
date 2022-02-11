@@ -8,6 +8,8 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),wayne)
 
+include $(call all-makefiles-under,$(LOCAL_PATH))
+
 include $(CLEAR_VARS)
 
 WCNSS_INI_SYMLINK := $(TARGET_OUT_VENDOR)/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
@@ -114,5 +116,4 @@ $(IMS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(IMS_SYMLINKS)
 
-include $(call all-makefiles-under,$(LOCAL_PATH))
 endif
